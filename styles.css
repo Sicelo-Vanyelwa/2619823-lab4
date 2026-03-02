@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* 1. Loading Spinner */
+.spinner {
+    margin: 20px auto;
+    border: 6px solid #ccc;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 2. Country Card */
+.country-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.country-card img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* 3. Border Grid */
+.border-grid {
+    display: grid; /* Required */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.border-card {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.border-card img {
+    width: 60px;
+}
+
+/* 4. Error Styling */
+.error {
+    color: red;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* 5. Hidden State */
+.hidden {
+    display: none;
+}
